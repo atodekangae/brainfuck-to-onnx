@@ -1,10 +1,8 @@
-`bf2onnx.py` is a script to compile Brainfuck programs into ONNX, the format for neural network models. This is of course a joke, as is common with programs related to Brainfuck.
+# Brainfuck to ONNX Compiler (`bf2onnx.py`)
+`bf2onnx.py` is a script that compiles Brainfuck programs into the ONNX format. I recently learned that ONNX, a neural network model format, is Turing-complete. This discovery posed a natural challenge to me: to write a Brainfuck compiler targeting it.
 
-## Background
-Upon learning that ONNX has sufficient expressiveness as an intermediate representation for compiling Brainfuck programs, I could not resist the temptation to actually write a Brainfuck compiler targeting ONNX.
-
-## Example Usage
-For compiling a Brainfuck program to `.onnx` file:
+## Usage
+To compile a Brainfuck program into a `.onnx` file:
 
 ```console
 $ python ./bf2onnx.py -o hello.onnx --bf '++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.'
